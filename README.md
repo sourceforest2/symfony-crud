@@ -17,6 +17,7 @@ Install the dependencies and start the server.
 $ cd sf-demo
 $ composer install
 $ php bin/console server:start
+$ npm run dev-server
 ```
 
 Your server address in your preferred browser: **localhost:8000**
