@@ -1,18 +1,20 @@
+# Symfony-5.4-Crud-Example
 
 ![image](https://github.com/sourceforest2/symfony-crud/assets/1700125/24b33dbc-7eac-47e1-9cbe-af7f7f2bb8b0)
 
+![image](https://github.com/sourceforest2/symfony-crud/assets/1700125/c1f5da56-4a41-4aef-abee-9825096c8c2c)
 
+![image](https://github.com/sourceforest2/symfony-crud/assets/1700125/b968b5ea-d175-4398-a743-666a302352a6)
 
-# Symfony-5.4-Crud-Example
+![image](https://github.com/sourceforest2/symfony-crud/assets/1700125/516648ee-324c-491b-abcd-1f0e1142407c)
 
-![1_5Ho8-Jz-vmqFQKZY5W_K9A](https://user-images.githubusercontent.com/18482866/109547006-f1e9f400-7adb-11eb-88ac-afbcbacf0674.gif)
 
 ### 1) Installation
 
 Install the dependencies and start the server.
 
 ```sh
-$ cd Symfony-4-Crud-Example
+$ cd sf-demo
 $ composer install
 $ php bin/console server:start
 ```
