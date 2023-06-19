@@ -1,0 +1,60 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello JobOfferController!{% endblock %}
+
+{% block body %}
+
+    {# {% if error %}
+        <div class="alert alert-danger">
+            {{ error.messageKey }}
+        </div>
+    {% endif %} #}
+
+    <section id="job">
+  <div class="container">
+	<div class="table">
+		<div class="table-wrapper">
+			<div class="table-title">
+				<div class="row">
+					<div class="col-sm-6">
+						<h2>Manage <b>job offer</b></h2>
+					</div>
+					<div class="col-sm-6 text-end">
+						<a href="/create" class="btn btn-success">Add New</a>
+					</div>
+				</div>
+			</div>
+			<table class="table table-striped table-hover table-bordered">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>Title</th>
+						<th>Email</th>
+						<th>salary</th>
+						<th>Phone</th>
+						<th>Actions</th>
+					</tr>
+				</thead>
+				<tbody>
+                    {% for jobOffer in jobOffers %}
+                        <tr data-id="{{jobOffer.id}}">
+                            <td>{{ loop.index }}</td>
+                            <td>{{ jobOffer.title }}</td>
+                            <td>{{ jobOffer.email }}</td>
+                            <td>{{ jobOffer.salary }}</td>
+                            <td>{{ jobOffer.phone }}</td>
+                            <td>
+                                <a href="/{{ jobOffer.id }}" class="view">View</a>
+                                <a href="update/{{ jobOffer.id }}" class="edit">Edit</a>
+                                <a href="#confirmDeleteModal" class="delete" data-bs-toggle="modal">Delete</a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+				</tbody>
+			</table>
+		</div>
+	</div>        
+</div>
+</section>
+{{ include('inc/_modal_confirm.html.twig') }}
+{% endblock %}

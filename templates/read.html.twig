@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello JobOfferController!{% endblock %}
+
+
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 my-3">
+            <a class="btn btn-primary" href="/">Go back<a>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-8">
+                <dl class="row">
+                    <dt class="col-md-2">Title :</dt>
+                    <dd class="col-md-10">{{ jobOffer.title }}</dd>
+                    <dt class="col-md-2">description :</dt>
+                    <dd class="col-md-10">{{ jobOffer.description }}</dd>
+                    <dt class="col-md-2">salary :</dt>
+                    <dd class="col-md-10">{{ jobOffer.salary }}</dd>
+                </dl>
+        </div>
+        <div style="background: #F1F1F1;padding-top:15px" class="col-md-4">
+                 <dl class="row">
+                    <dt class="col-md-3">Address :</dt>
+                    <dd class="col-md-9"> {{ jobOffer.address }} </dd>
+                    <dt class="col-md-3">email :</dt>
+                    <dd class="col-md-9">{{ jobOffer.email }}></dd>
+                    <dt class="col-md-3">phone :</dt>
+                    <dd class="col-md-9">{{ jobOffer.phone }}</dd>
+                </dl> 
+        </div>
+    </div>
+</div>
+{% endblock %}
